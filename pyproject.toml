@@ -1,0 +1,22 @@
+[project]
+name = "thetadata-utils"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dharmatech", email = "wayo.cavazos@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "thetadata-api-v3",
+]
+
+[project.scripts]
+thetadata-utils = "thetadata_utils:main"
+
+[build-system]
+requires = ["uv_build>=0.9.6,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+thetadata-api-v3 = { git = "https://github.com/dharmatech/thetadata-api-v3" }
