@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.14"
 dependencies = [
     "thetadata-api-v3",
+    "tqdm>=4.67.1",
 ]
 
 [project.scripts]
